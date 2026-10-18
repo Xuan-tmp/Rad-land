@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, BookOpenText, Compass, History, Orbit, Sparkles } from 'lucide-react';
 import { SiteHeader } from '@/components/site-header';
@@ -23,7 +22,7 @@ export default function Home() {
           <h1 id="hero-title">在世界的边界之下，<br /><em>光</em>重写了一切。</h1>
           <p className="hero-intro">拉德兰是一座被浮光封闭的世界。魔法贵族、工业文明与新大陆的发现，正共同将它推向下一次裂变。</p>
           <div className="hero-actions">
-            <Link href="/world/overview" className="primary-action">开始阅读 <ArrowRight size={17} /></Link>
+            <Link href="/world/world-structure" className="primary-action">开始阅读 <ArrowRight size={17} /></Link>
             <Link href="/encyclopedia" className="secondary-action"><BookOpenText size={17} /> 浏览百科</Link>
           </div>
         </div>
@@ -37,11 +36,6 @@ export default function Home() {
           <div className="atlas-meta"><span>旧大陆 · 文明核心</span><span>新大陆 · 开发前线</span></div>
         </aside>
       </section>
-
-      <figure className="archive-cover">
-        <Image src="/og.png" width={1672} height={941} alt="浮光笼罩下的拉德兰双大陆：安瑟拉与维吉亚" priority />
-        <figcaption><span>档案封面 · 双大陆观测图</span><span>安瑟拉 / 中央海 / 维吉亚</span></figcaption>
-      </figure>
 
       <section className="entry-section" aria-labelledby="entry-heading">
         <div className="section-heading">
